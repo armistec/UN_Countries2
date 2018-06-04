@@ -105,38 +105,34 @@ $(document).ready(function() {
 
   //data
   function generateData() {
-    var sin = [],
-        sin2 = [],
-        cos = [],
-        cos2 = [],
-        r1 = Math.random(),
-        r2 = Math.random(),
-        r3 = Math.random(),
-        r4 = Math.random();
+    var bol = [[1960,15], [1961,32], [1962,38], [1963,68], [1964,80], [1965,21], [1966,40]],
+        mex = [[1960,55], [1961,10], [1962,12], [1963,20], [1964,25], [1965,12], [1966,35]],
+        tas = [[1960,5], [1961,6], [1962,50], [1963,55], [1964,32], [1965,30], [1966,28]],
+        cos2 = [[1960,50], [1961,48], [1962,65], [1963,30], [1964,32], [1965,20], [1966,60]];
 
-    for (var i = 0; i < 100; i++) {
-      sin.push([ i, r1 * Math.sin( r2 +  i / (10 * (r4 + .5) ))]);
-      cos.push([ i, r2 * Math.cos( r3 + i / (10 * (r3 + .5) ))]);
-      sin2.push([ i, r3 * Math.sin( r1 + i / (10 * (r2 + .5) ))]);
-      cos2.push([ i, r4 * Math.cos( r4 + i / (10 * (r1 + .5) ))]);
-    }
+    //for (var i = 0; i < 100; i++) {
+      //sin.push([ i, r1 * Math.sin( r2 +  i / (10 * (r4 + .5) ))]);
+      //cos.push([ i, r2 * Math.cos( r3 + i / (10 * (r3 + .5) ))]);
+      //sin2.push([ i, r3 * Math.sin( r1 + i / (10 * (r2 + .5) ))]);
+      //cos2.push([ i, r4 * Math.cos( r4 + i / (10 * (r1 + .5) ))]);
+    //}
 
     return [
       {
-        data: sin,
-        label: "Sine Wave"
+        data: bol,
+        label: "Bolivia"
       },
       {
-        data: cos,
-        label: "Cosine Wave"
+        data: mex,
+        label: "Mexico"
       },
       {
-        data: sin2,
-        label: "Sine2 Wave"
+        data: tas,
+        label: "Country 3"
       },
       {
         data: cos2,
-        label: "Cosine2 Wave"
+        label: "County 4"
       }
     ];
   }
