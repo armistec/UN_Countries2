@@ -34,7 +34,7 @@ function log(text) {
 
 
 $(document).ready(function() {
-  var margin = {top: 50, right: 10, bottom: 30, left: 60},
+  var margin = {top: 60, right: 10, bottom: 30, left: 60},
       chart = d3LineWithLegend()
                 .xAxis.label('Year')
                 .width(width(margin))
@@ -96,9 +96,9 @@ $(document).ready(function() {
   }
 
   function height(margin) {
-    var h = $(window).height() - 60;
+    var h = $(window).height() - 80;
 
-    return ( h - margin.top - margin.bottom - 60 < 0 ) ? 
+    return ( h - margin.top - margin.bottom - 80 < 0 ) ? 
               margin.top + margin.bottom + 2 : h;
   }
 
