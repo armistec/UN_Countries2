@@ -36,10 +36,10 @@ function log(text) {
 $(document).ready(function() {
   var margin = {top: 30, right: 10, bottom: 50, left: 60},
       chart = d3LineWithLegend()
-                .xAxis.label('Time (ms)')
+                .xAxis.label('Year')
                 .width(width(margin))
                 .height(height(margin))
-                .yAxis.label('Voltage (v)');
+                .yAxis.label('$ in US Aid (Millions)');
 
 
   var svg = d3.select('#test1 svg')
